@@ -1,0 +1,35 @@
+﻿@model WebApplication1.Entity.News
+
+<h1 style="text-align:center
+    ">
+    @Html.DisplayFor(model => model.Title)
+</h1>
+<div class="date-left">
+    <h5>@Html.DisplayNameFor(model => model.Date):@Html.DisplayFor(model => model.Date)</h5>
+
+</div>
+
+
+<div>
+    <img class="leftimg" src="@(Url.Content(Constants.ProductImagePath) + Html.DisplayFor(model => model.Image))" width="240" height="240" />
+    <p>
+        @Html.DisplayFor(model => model.Description)
+    </p>
+    @*<dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>*@
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

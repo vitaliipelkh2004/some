@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "_SearchProduct";
+}
+
+
+@using (Html.BeginForm("Index", "UserNews", FormMethod.Post))
+{ 
+<div class="searcha">
+    <input  placeholder="Title" name="searchText" />
+    <button class="btn btn-primary" type="submit">Search</button>
+</div>
+}
+

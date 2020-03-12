@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebApplication1.Models.GNewsViewModel>
+<h2>News</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+
+    <div class="main-pice">
+
+        <div class="some">
+            @*@Html.DisplayFor(modelItem => item.Date)*@
+        </div>
+        <div class="left-pice">
+            <img src="@(Url.Content(Constants.ProductImagePath)+item.Image)" />
+        </div>
+        <div class="right-pice">
+            <div class="top-pice">
+                <h2>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </h2>
+                <div class="content">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </div>
+            </div>
+            <div class="down-pice">
+                @Html.DisplayFor(modelItem => item.Country)
+
+                @*@Html.DisplayFor(modelItem => item.Time)*@
+                <button>
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                </button>
+                <button>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </button>
+                <button>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </button>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,123 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.main-pice {
+    width: 100%;
+    height: 360px;
+}
+
+.left-pice {
+    margin: 10px;
+    width: 20%;
+    height: 80%;
+    float: left;
+}
+
+.right-pice {
+  
+    width: 70%;
+    height: 340px;
+    padding: 0;
+    float:left
+}
+
+    .left-pice img {
+        margin: 10px;
+        float: left;
+        width: 230px;
+        height: 230px;
+    }
+
+
+
+    .right-pice div {
+        float: left;
+    }
+
+.top-pice {
+    float: left;
+    margin: 10px;
+    padding: 0;
+}
+
+    .top-pice h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+.down-pice {
+    float: left;
+    margin-top: 70px;
+    margin-left: 400px;
+    padding: 0;
+}
+
+
+
+.content {
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+
+
+.some {
+    border: 4px;
+    width: 100%;
+    height: 30px;
+    background-color: #CDCDCD;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.leftimg {
+    float: left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+
+.date-left{
+    margin-bottom:20px;
+}
+
+
+
+.searcha{
+    width:500px;
+    height:50px;
+   margin-top:10px;
+    margin-bottom:0px;
+}
+
+.search input{
+    width:70%;
+    height:40px;
+}
+.search button{
+    width:30%;
+    height:40px;
+}
